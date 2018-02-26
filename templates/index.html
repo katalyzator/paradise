@@ -478,7 +478,29 @@
                                                                                href="mailto: @skiparadisekg"
                                                                                uk-tooltip="Написать нам"><img
             class="svg-size uk-margin-top" src="{% static 'img/svg/mail.svg' %}" alt="">
-        <p class="font-text uk-margin-remove-top">@skiparadisekg</p></a><a class="write" href="">Написать нам</a>
+        <p class="font-text uk-margin-remove-top">@skiparadisekg</p></a>
+        <a class="write uk-button uk-button-default" href="#feedback" uk-toggle>Написать нам</a>
+        <div id="feedback" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <form action="">
+                    <h3 class="com-header">Напишите нам</h3>
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Ваш номер телефона">
+                    </div>
+                    <div class="uk-margin">
+                        <textarea class="uk-textarea" rows="5" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <div class="uk-margin">
+                        <button type="submit " class="uk-button uk-button-default" style="outline: none;">Отправить </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
 <section class="maps uk-margin-medium-top uk-margin-bottom">
