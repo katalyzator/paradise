@@ -54,9 +54,10 @@
             background-color: #fff
         }
     </style>
-    <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{% static 'css/style.min.css' %}" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
     </noscript>
     <script>!function (t) {
         "use strict";
@@ -149,7 +150,7 @@
 </header>
 <section class="banner">
     <div class="uk-background-cover uk-height-large-l uk-panel uk-flex uk-flex-center uk-flex-middle"
-         style="background-image: url(img/jpg/banner.jpg);"></div>
+         style="background-image: url({% static 'img/jpg/banner.jpg' %});"></div>
 </section>
 <div class="uk-container uk-container-expand">
     <div class="about-us uk-grid uk-child-width-1-1" uk-grid="">
@@ -160,7 +161,8 @@
                     <div class="right uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: fade">
                         <ul class="uk-slideshow-items">
                             <li>
-                                <div class="uk-cover-container"><img class="lazy" data-src="img/jpg/image1.jpg" alt=""
+                                <div class="uk-cover-container"><img class="lazy"
+                                                                     data-src="{% static 'img/jpg/image1.jpg' %}" alt=""
                                                                      uk-cover="">
                                     <canvas width="990" height="580"></canvas>
                                 </div>
@@ -174,7 +176,8 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="uk-cover-container"><img class="lazy" data-src="img/jpg/image2.jpg" alt=""
+                                <div class="uk-cover-container"><img class="lazy"
+                                                                     data-src="{% static 'img/jpg/image2.jpg' %}" alt=""
                                                                      uk-cover="">
                                     <canvas width="990" height="580"></canvas>
                                 </div>
@@ -188,7 +191,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="uk-cover-container"><img class="lazy" data-src="img/jpg/image3.jpg" alt=""
+                                <div class="uk-cover-container"><img class="lazy" data-src="{% static 'img/jpg/image3.jpg' %}" alt=""
                                                                      uk-cover="">
                                     <canvas width="990" height="580"></canvas>
                                 </div>
@@ -231,7 +234,7 @@
                     <div class="left uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: fade">
                         <ul class="uk-slideshow-items">
                             <li>
-                                <div class="uk-cover-container"><img class="lazy" data-src="img/jpg/image2.jpg" alt=""
+                                <div class="uk-cover-container"><img class="lazy" data-src="{% static 'img/jpg/image2.jpg' %}" alt=""
                                                                      uk-cover="">
                                     <canvas width="990" height="580"></canvas>
                                 </div>
@@ -245,7 +248,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="uk-cover-container"><img class="lazy" data-src="img/jpg/image3.jpg" alt=""
+                                <div class="uk-cover-container"><img class="lazy" data-src="{% static 'img/jpg/image3.jpg' %}" alt=""
                                                                      uk-cover="">
                                     <canvas width="990" height="580"></canvas>
                                 </div>
@@ -259,7 +262,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="uk-cover-container"><img class="lazy" data-src="img/jpg/image4.jpg" alt=""
+                                <div class="uk-cover-container"><img class="lazy" data-src="{% static 'img/jpg/image4.jpg' %}" alt=""
                                                                      uk-cover="">
                                     <canvas width="990" height="580"></canvas>
                                 </div>
@@ -287,7 +290,7 @@
                     <div class="right uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: fade">
                         <ul class="uk-slideshow-items">
                             <li>
-                                <div class="uk-cover-container"><img class="lazy" data-src="img/jpg/image3.jpg" alt=""
+                                <div class="uk-cover-container"><img class="lazy" data-src="{% static 'img/jpg/image3.jpg' %}" alt=""
                                                                      uk-cover="">
                                     <canvas width="990" height="580"></canvas>
                                 </div>
@@ -301,7 +304,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="uk-cover-container"><img class="lazy" data-src="img/jpg/image4.jpg" alt=""
+                                <div class="uk-cover-container"><img class="lazy" data-src="{% static 'img/jpg/image4.jpg' %}" alt=""
                                                                      uk-cover="">
                                     <canvas width="990" height="580"></canvas>
                                 </div>
@@ -315,7 +318,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="uk-cover-container"><img class="lazy" data-src="img/jpg/image5.jpg" alt=""
+                                <div class="uk-cover-container"><img class="lazy" data-src="{% static 'img/jpg/image5.jpg' %}" alt=""
                                                                      uk-cover="">
                                     <canvas width="990" height="580"></canvas>
                                 </div>
@@ -357,7 +360,7 @@
                     <div class="left uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: fade">
                         <ul class="uk-slideshow-items">
                             <li>
-                                <div class="uk-cover-container"><img class="lazy" data-src="img/jpg/image4.jpg" alt=""
+                                <div class="uk-cover-container"><img class="lazy" data-src="{% static 'img/jpg/image4.jpg' %}" alt=""
                                                                      uk-cover="">
                                     <canvas width="990" height="580"></canvas>
                                 </div>
@@ -371,7 +374,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="uk-cover-container"><img class="lazy" data-src="img/jpg/image5.jpg" alt=""
+                                <div class="uk-cover-container"><img class="lazy" data-src="{% static 'img/jpg/image5.jpg' %}" alt=""
                                                                      uk-cover="">
                                     <canvas width="990" height="580"></canvas>
                                 </div>
@@ -385,7 +388,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="uk-cover-container"><img class="lazy" data-src="img/jpg/image1.jpg" alt=""
+                                <div class="uk-cover-container"><img class="lazy" data-src="{% static 'img/jpg/image1.jpg' %}" alt=""
                                                                      uk-cover="">
                                     <canvas width="990" height="580"></canvas>
                                 </div>
@@ -443,22 +446,22 @@
                 Иссык-Куль, горнолыжная база, горячие источники и условия для экстремальных видов спорта:</p>
             <div class="uk-grid uk-flex-center uk-child-width-1-3@s uk-child-width-1-3@l uk-child-width-1-1" uk-grid=""
                  uk-height-match="target: &gt; div &gt; p">
-                <div class="sport-types"><img class="uk-visible@s" src="img/svg/parachutist.svg" alt="">
+                <div class="sport-types"><img class="uk-visible@s" src="{% static 'img/svg/parachutist.svg' %}" alt="">
                     <p class="font-text">Парапланинг</p>
                 </div>
-                <div class="sport-types"><img class="uk-visible@s" src="img/svg/cable-car-cabin (1).svg" alt="">
+                <div class="sport-types"><img class="uk-visible@s" src="{% static 'img/svg/cable-car-cabin (1).svg' %}" alt="">
                     <p class="font-text">Горнолыжный <br> спорт</p>
                 </div>
-                <div class="sport-types"><img class="uk-visible@s" src="img/svg/mountain.svg" alt="">
+                <div class="sport-types"><img class="uk-visible@s" src="{% static 'img/svg/mountain.svg' %}" alt="">
                     <p class="font-text">Альпинизм</p>
                 </div>
             </div>
             <div class="uk-grid uk-flex-center uk-child-width-1-3@s uk-child-width-1-3@l uk-child-width-1-1" uk-grid=""
                  uk-height-match="target: &gt; div &gt; p">
-                <div class="sport-types"><img class="uk-visible@s" src="img/svg/lake.svg" alt="">
+                <div class="sport-types"><img class="uk-visible@s" src="{% static 'img/svg/lake.svg' %}" alt="">
                     <p class="font-text">Озеро <br> Иссык-Куль</p>
                 </div>
-                <div class="sport-types"><img class="uk-visible@s" src="img/svg/hot.svg" alt="">
+                <div class="sport-types"><img class="uk-visible@s" src="{% static 'img/svg/hot.svg' %}" alt="">
                     <p class="font-text">Горячие <br> источники</p>
                 </div>
             </div>
@@ -474,7 +477,7 @@
         <p class="font-text uk-margin-remove-top">(+996) 775 511 111</p></a><a class="mail"
                                                                                href="mailto: @skiparadisekg"
                                                                                uk-tooltip="Написать нам"><img
-            class="svg-size uk-margin-top" src="img/svg/mail.svg" alt="">
+            class="svg-size uk-margin-top" src="{% static 'img/svg/mail.svg' %}" alt="">
         <p class="font-text uk-margin-remove-top">@skiparadisekg</p></a><a class="write" href="">Написать нам</a>
     </div>
 </section>
@@ -506,12 +509,12 @@
         <div class="copyright">
             <div class="uk-text-center">
                 <p><a href="http://sunrisestudio.pro/" target="blank">&copy; 2018. Сделано в Sunrise<img
-                        class="uk-margin-small-left" src="img/sunrise.webp" alt="" width="30px"></a></p>
+                        class="uk-margin-small-left" src="{% static 'img/sunrise.webp' %}" alt="" width="30px"></a></p>
             </div>
         </div>
     </div>
 </footer>
-<script src="js/libs.min.js"></script>
-<script src="js/common.min.js"></script>
+<script src="{% static 'js/libs.min.js' %}"></script>
+<script src="{% static 'js/common.min.js' %}"></script>
 </body>
 </html>
