@@ -13,7 +13,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
     <meta name="apple-mobile-web-app-title" content="Application Name">
-    <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="format-detection" content="telephone=no">
     <style type="text/css">
@@ -770,6 +769,14 @@
         </div>
     </div>
 </footer>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115497827-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115497827-1');
+</script>
 <script src="{% static 'js/libs.min.js' %}"></script>
 <script src="{% static 'js/common.min.js' %}"></script>
 </body>
